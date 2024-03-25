@@ -45,5 +45,5 @@ jobs:
 workflows:
   test:
     jobs:
-      - UI
-      - API
+      - UITest
+      - APITest
