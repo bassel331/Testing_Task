@@ -5,7 +5,7 @@ orbs:
 jobs:
   UITest:
     docker:
-      - image: cimg/node:21.6.1-browsers
+      - image: cimg/node:20.4.0-browsers
     steps:
       - checkout
       - browser-tools/install-browser-tools:
@@ -23,7 +23,7 @@ jobs:
           destination: html_reports
   APITest:
     docker:
-      - image: cimg/node:21.6.1
+      - image: cimg/node:20.4.0-browsers
     steps:
       - checkout
       - run:
