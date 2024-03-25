@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="1"
+            tests="1">
+
+  <testsuite name="DressSearch.dressSearchResults"
+    errors="0" failures="1" hostname="" id="" package="DressSearch" skipped="0"
+    tests="1" time="26.99" timestamp="">
+  
+    <testcase name="dressSearchResults" classname="DressSearch.dressSearchResults" time="13.49" assertions="1">  <failure message="Failed [equal]: (Expected right elements to be present) - expected &#34;0&#34; but got: &#34;2&#34; (1ms)">    at NightwatchAPI.&lt;anonymous&gt; (C:\Users\Essam\Downloads\TESTAUTOMATION\tests\DressSearch\dressSearchResults.js:19:28)</failure>
+
+    
+    </testcase>
+  
+
+  
+
+    
+
+  
+  </testsuite>
+</testsuites>

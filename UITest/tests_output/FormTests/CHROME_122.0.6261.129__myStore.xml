@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="4"
+            failures="5"
+            tests="9">
+
+  <testsuite name="FormTests.myStore"
+    errors="4" failures="5" hostname="" id="" package="FormTests" skipped="0"
+    tests="9" time="82.32" timestamp="">
+  
+    <testcase name="All inputs test" classname="FormTests.myStore" time="7.689" assertions="1">
+
+    
+    </testcase>
+  
+    <testcase name="Typing very long message" classname="FormTests.myStore" time="5.912" assertions="1">  <failure message="Expected element &lt;div[class=&#34;alert alert-danger&#34;]&gt; to be visible in 3000ms - element was not found - expected &#34;visible&#34; but got: &#34;not found&#34; (3117ms)">    at Typing very long message (C:\Users\Essam\Downloads\TESTAUTOMATION\tests\FormTests\myStore.js:43:28)</failure>
+
+    
+    <error type="error"><![CDATA[
+    NoSuchElementError: Unable to locate element: div[class=&#34;alert alert-danger&#34;] using css selector
+    at throwDecodedError (C:\Users\Essam\Downloads\TESTAUTOMATION\node_modules\selenium-webdriver\lib\error.js:524:15)
+    at ChromeDriver.handleErrorResponse (C:\Users\Essam\Downloads\TESTAUTOMATION\node_modules\nightwatch\lib\transport\selenium-webdriver\index.js:400:7)
+    at TransportActions.makeResult (C:\Users\Essam\Downloads\TESTAUTOMATION\node_modules\nightwatch\lib\transport\selenium-webdriver\actions.js:85:20)
+    at Object.locateMultipleElements (C:\Users\Essam\Downloads\TESTAUTOMATION\node_modules\nightwatch\lib\transport\selenium-webdriver\actions.js:71:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async LocateElement.findElement (C:\Users\Essam\Downloads\TESTAUTOMATION\node_modules\nightwatch\lib\element\locator.js:167:20)
+    ]]></error>
+    
+    </testcase>
+  
+    <testcase name="Typing very long order refernce" classname="FormTests.myStore" time="6.401" assertions="1">  <failure message="Expected element &lt;div[class=&#34;alert alert-danger&#34;]&gt; to be visible in 3000ms - element was not found - expected &#34;visible&#34; but got: &#34;not found&#34; (3118ms)">    at Typing very long order refernce (C:\Users\Essam\Downloads\TESTAUTOMATION\tests\FormTests\myStore.js:63:28)</failure>
+
+    
+    <error type="error"><![CDATA[
+    NoSuchElementError: Unable to locate element: div[class=&#34;alert alert-danger&#34;] using css selector
+    at throwDecodedError (C:\Users\Essam\Downloads\TESTAUTOMATION\node_modules\selenium-webdriver\lib\error.js:524:15)
+    at ChromeDriver.handleErrorResponse (C:\Users\Essam\Downloads\TESTAUTOMATION\node_modules\nightwatch\lib\transport\selenium-webdriver\index.js:400:7)
+    at TransportActions.makeResult (C:\Users\Essam\Downloads\TESTAUTOMATION\node_modules\nightwatch\lib\transport\selenium-webdriver\actions.js:85:20)
+    at Object.locateMultipleElements (C:\Users\Essam\Downloads\TESTAUTOMATION\node_modules\nightwatch\lib\transport\selenium-webdriver\actions.js:71:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async LocateElement.findElement (C:\Users\Essam\Downloads\TESTAUTOMATION\node_modules\nightwatch\lib\element\locator.js:167:20)
+    ]]></error>
+    
+    </testcase>
+  
+    <testcase name="Attaching File is required" classname="FormTests.myStore" time="5.696" assertions="1">  <failure message="Expected element &lt;div[class=&#34;alert alert-danger&#34;]&gt; to be visible in 3000ms - element was not found - expected &#34;visible&#34; but got: &#34;not found&#34; (3104ms)">    at Attaching File is required (C:\Users\Essam\Downloads\TESTAUTOMATION\tests\FormTests\myStore.js:81:28)</failure>
+
+    
+    <error type="error"><![CDATA[
+    NoSuchElementError: Unable to locate element: div[class=&#34;alert alert-danger&#34;] using css selector
+    at throwDecodedError (C:\Users\Essam\Downloads\TESTAUTOMATION\node_modules\selenium-webdriver\lib\error.js:524:15)
+    at ChromeDriver.handleErrorResponse (C:\Users\Essam\Downloads\TESTAUTOMATION\node_modules\nightwatch\lib\transport\selenium-webdriver\index.js:400:7)
+    at TransportActions.makeResult (C:\Users\Essam\Downloads\TESTAUTOMATION\node_modules\nightwatch\lib\transport\selenium-webdriver\actions.js:85:20)
+    at Object.locateMultipleElements (C:\Users\Essam\Downloads\TESTAUTOMATION\node_modules\nightwatch\lib\transport\selenium-webdriver\actions.js:71:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async LocateElement.findElement (C:\Users\Essam\Downloads\TESTAUTOMATION\node_modules\nightwatch\lib\element\locator.js:167:20)
+    ]]></error>
+    
+    </testcase>
+  
+    <testcase name="checkEmailValidation using invalid Email address" classname="FormTests.myStore" time="2.011" assertions="1">  <failure message="Failed [ok]: (Entered email &#34;bassel.@gmail.com&#34; has a valid format) - expected &#34;true&#34; but got: &#34;false&#34; (0ms)">    at NightwatchAPI.&lt;anonymous&gt; (C:\Users\Essam\Downloads\TESTAUTOMATION\tests\FormTests\myStore.js:102:29)</failure>
+
+    
+    </testcase>
+  
+    <testcase name="Typing Email is required" classname="FormTests.myStore" time="2.607" assertions="1">
+
+    
+    </testcase>
+  
+    <testcase name="Typing Message is required" classname="FormTests.myStore" time="2.509" assertions="1">
+
+    
+    </testcase>
+  
+    <testcase name="Typing Order Reference is required" classname="FormTests.myStore" time="5.847" assertions="1">  <failure message="Expected element &lt;div[class=&#34;alert alert-danger&#34;]&gt; to be visible in 3000ms - element was not found - expected &#34;visible&#34; but got: &#34;not found&#34; (3115ms)">    at Typing Order Reference is required (C:\Users\Essam\Downloads\TESTAUTOMATION\tests\FormTests\myStore.js:160:28)</failure>
+
+    
+    <error type="error"><![CDATA[
+    NoSuchElementError: Unable to locate element: div[class=&#34;alert alert-danger&#34;] using css selector
+    at throwDecodedError (C:\Users\Essam\Downloads\TESTAUTOMATION\node_modules\selenium-webdriver\lib\error.js:524:15)
+    at ChromeDriver.handleErrorResponse (C:\Users\Essam\Downloads\TESTAUTOMATION\node_modules\nightwatch\lib\transport\selenium-webdriver\index.js:400:7)
+    at TransportActions.makeResult (C:\Users\Essam\Downloads\TESTAUTOMATION\node_modules\nightwatch\lib\transport\selenium-webdriver\actions.js:85:20)
+    at Object.locateMultipleElements (C:\Users\Essam\Downloads\TESTAUTOMATION\node_modules\nightwatch\lib\transport\selenium-webdriver\actions.js:71:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async LocateElement.findElement (C:\Users\Essam\Downloads\TESTAUTOMATION\node_modules\nightwatch\lib\element\locator.js:167:20)
+    ]]></error>
+    
+    </testcase>
+  
+    <testcase name="Tying Subject Heading is required" classname="FormTests.myStore" time="2.485" assertions="1">
+
+    
+    </testcase>
+  
+
+  
+    <system-err>
+       NoSuchElementError
+   An element could not be located on the page using the given search parameters.
+
+    Try fixing by :
+    1. Please inspect the html before the step
+    2. Verify if an element with the mentioned selector is present in the DOM tree
+ NoSuchElementError
+   An element could not be located on the page using the given search parameters.
+
+    Try fixing by :
+    1. Please inspect the html before the step
+    2. Verify if an element with the mentioned selector is present in the DOM tree
+ NoSuchElementError
+   An element could not be located on the page using the given search parameters.
+
+    Try fixing by :
+    1. Please inspect the html before the step
+    2. Verify if an element with the mentioned selector is present in the DOM tree
+ NoSuchElementError
+   An element could not be located on the page using the given search parameters.
+
+    Try fixing by :
+    1. Please inspect the html before the step
+    2. Verify if an element with the mentioned selector is present in the DOM tree
+    </system-err>
+  
+
+    
+
+  
+  </testsuite>
+</testsuites>

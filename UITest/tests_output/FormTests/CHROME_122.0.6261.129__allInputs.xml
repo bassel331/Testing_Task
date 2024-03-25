@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="0"
+            tests="1">
+
+  <testsuite name="FormTests.allInputs"
+    errors="0" failures="0" hostname="" id="" package="FormTests" skipped="0"
+    tests="1" time="17.27" timestamp="">
+  
+    <testcase name="All inputs test" classname="FormTests.allInputs" time="8.630" assertions="1">
+
+    
+    </testcase>
+  
+
+  
+    <system-err>
+       Error
+   Unknown property: &#34;message&#34;. Please consult docs at: https://nightwatchjs.org/api/expect
+
+    Error location:
+    C:\Users\Essam\Downloads\TESTAUTOMATION\tests\FormTests\myStore.js:20
+    ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+     18 |            
+     19 |          
+     20 |             browser.expect.element(formSuccess).to.be.visible.before(5000).with.message(&#39;All input are added successfuly&#39;); 
+     21 | 
+     22 |     } 
+    ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+    </system-err>
+  
+
+    
+
+  
+  </testsuite>
+</testsuites>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="1"
+            tests="1">
+
+  <testsuite name="FormTests.withoutFile"
+    errors="0" failures="1" hostname="" id="" package="FormTests" skipped="0"
+    tests="1" time="28.75" timestamp="">
+  
+    <testcase name="All inputs without File test" classname="FormTests.withoutFile" time="14.37" assertions="1">  <failure message="All inputs with File are added in 5000ms - expected &#34;is visible&#34; but got: &#34;element could not be located&#34; (5193ms)">    at All inputs without File test (C:\Users\Essam\Downloads\TESTAUTOMATION\tests\FormTests\withoutFile.js:18:21)</failure>
+
+    
+    </testcase>
+  
+
+  
+
+    
+
+  
+  </testsuite>
+</testsuites>

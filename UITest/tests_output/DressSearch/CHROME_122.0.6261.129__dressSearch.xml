@@ -1,0 +1,557 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="3"
+            failures="1"
+            tests="1">
+
+  <testsuite name="DressSearch.dressSearch"
+    errors="3" failures="1" hostname="" id="" package="DressSearch" skipped="0"
+    tests="1" time="39.09" timestamp="">
+  
+    <testcase name="Demo test" classname="DressSearch.dressSearch" time="19.54" assertions="1">  <failure message="Error while running &#34;getText&#34; command: [TypeError] result.value.includes is not a function">TypeError: Error while running &#34;getText&#34; command: [TypeError] result.value.includes is not a function
+    at NightwatchAPI.&lt;anonymous&gt; (C:\Users\Essam\Downloads\TESTAUTOMATION\tests\DressSearch\dressSearch.js:10:41)</failure>
+
+    
+    <error type="error"><![CDATA[
+    TypeError: Error while running &#34;getText&#34; command: [TypeError] result.value.includes is not a function
+    at NightwatchAPI.&lt;anonymous&gt; (C:\Users\Essam\Downloads\TESTAUTOMATION\tests\DressSearch\dressSearch.js:10:41)
+    at Object.apply (C:\Users\Essam\Downloads\TESTAUTOMATION\node_modules\nightwatch\lib\api\_loaders\_base-loader.js:411:29)
+    at GetText.complete (C:\Users\Essam\Downloads\TESTAUTOMATION\node_modules\nightwatch\lib\element\command.js:240:27)
+    at GetText.handleElementError (C:\Users\Essam\Downloads\TESTAUTOMATION\node_modules\nightwatch\lib\api\element-commands\_baseElementCommand.js:181:17)
+    at GetText.elementNotFound (C:\Users\Essam\Downloads\TESTAUTOMATION\node_modules\nightwatch\lib\api\element-commands\_baseElementCommand.js:109:17)
+    at GetText.elementLocateError (C:\Users\Essam\Downloads\TESTAUTOMATION\node_modules\nightwatch\lib\element\command.js:195:19)
+    at Object.errorHandler (C:\Users\Essam\Downloads\TESTAUTOMATION\node_modules\nightwatch\lib\api\element-commands\_baseElementCommand.js:94:23)
+    at PeriodicPromise.runAction (C:\Users\Essam\Downloads\TESTAUTOMATION\node_modules\nightwatch\lib\utils\periodic-promise.js:64:29)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    ]]></error>
+    
+    </testcase>
+  
+
+  
+    <system-err>
+       NoSuchElementError
+   An element could not be located on the page using the given search parameters.
+
+    Try fixing by :
+    1. Please inspect the html before the step
+    2. Verify if an element with the mentioned selector is present in the DOM tree
+
+    Error location:
+    C:\Users\Essam\Downloads\TESTAUTOMATION\tests\DressSearch\dressSearch.js:7
+    ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+     5 |         browser 
+     6 |         .url(&#39;http://automationpractice.multiformis.com/index.php&#39;) 
+     7 |         .setValue(&#39;input[name=&#34;search_query&#34;]&#39;,&#34;dress&#34;) 
+     8 |         .click(&#39;button[name=&#34;submit_search&#34;]&#39;)
+     9 |         .getText(&#39;span[class=&#34;lighter&#34;]&#39;, function(result) {
+    ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+ NoSuchElementError
+   An element could not be located on the page using the given search parameters.
+
+    Try fixing by :
+    1. Please inspect the html before the step
+    2. Verify if an element with the mentioned selector is present in the DOM tree
+
+    Error location:
+    C:\Users\Essam\Downloads\TESTAUTOMATION\tests\DressSearch\dressSearch.js:8
+    ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+     6 |         .url(&#39;http://automationpractice.multiformis.com/index.php&#39;) 
+     7 |         .setValue(&#39;input[name=&#34;search_query&#34;]&#39;,&#34;dress&#34;)
+     8 |         .click(&#39;button[name=&#34;submit_search&#34;]&#39;) 
+     9 |         .getText(&#39;span[class=&#34;lighter&#34;]&#39;, function(result) {
+     10 |             this.assert.ok(result.value.includes(&#39;DRESS&#39;), &#39;Filtering Search by DRESS&#39;);
+    ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+ NoSuchElementError
+   An element could not be located on the page using the given search parameters.
+
+    Try fixing by :
+    1. Please inspect the html before the step
+    2. Verify if an element with the mentioned selector is present in the DOM tree
+
+    Error location:
+    C:\Users\Essam\Downloads\TESTAUTOMATION\tests\DressSearch\dressSearch.js:9
+    ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+     7 |         .setValue(&#39;input[name=&#34;search_query&#34;]&#39;,&#34;dress&#34;)
+     8 |         .click(&#39;button[name=&#34;submit_search&#34;]&#39;)
+     9 |         .getText(&#39;span[class=&#34;lighter&#34;]&#39;, function(result) { 
+     10 |             this.assert.ok(result.value.includes(&#39;DRESS&#39;), &#39;Filtering Search by DRESS&#39;);
+     11 |           })
+    ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+ NoSuchElementError
+   An element could not be located on the page using the given search parameters.
+
+    Try fixing by :
+    1. Please inspect the html before the step
+    2. Verify if an element with the mentioned selector is present in the DOM tree
+
+    Error location:
+    C:\Users\Essam\Downloads\TESTAUTOMATION\tests\FormTests\withoutSubjectHeading.js:7
+    ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+     5 |         browser 
+     6 |         .url(&#39;http://automationpractice.multiformis.com/index.php&#39;) 
+     7 |         .click(&#39;#contact-link&#39;) 
+     8 |         .setValue(&#39;input[name=&#34;from&#34;]&#39;,&#34;bassel28@gmail.com&#34;)
+     9 |         .setValue(&#39;input[name=&#34;id_order&#34;]&#39;,&#34;2110&#34;)
+    ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+ NoSuchElementError
+   An element could not be located on the page using the given search parameters.
+
+    Try fixing by :
+    1. Please inspect the html before the step
+    2. Verify if an element with the mentioned selector is present in the DOM tree
+
+    Error location:
+    C:\Users\Essam\Downloads\TESTAUTOMATION\tests\FormTests\withoutSubjectHeading.js:8
+    ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+     6 |         .url(&#39;http://automationpractice.multiformis.com/index.php&#39;) 
+     7 |         .click(&#39;#contact-link&#39;)
+     8 |         .setValue(&#39;input[name=&#34;from&#34;]&#39;,&#34;bassel28@gmail.com&#34;) 
+     9 |         .setValue(&#39;input[name=&#34;id_order&#34;]&#39;,&#34;2110&#34;)
+     10 |         .setValue(&#39;textarea[name=&#34;message&#34;]&#39;,&#34;order is too late!&#34;)
+    ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+ NoSuchElementError
+   An element could not be located on the page using the given search parameters.
+
+    Try fixing by :
+    1. Please inspect the html before the step
+    2. Verify if an element with the mentioned selector is present in the DOM tree
+
+    Error location:
+    C:\Users\Essam\Downloads\TESTAUTOMATION\tests\FormTests\withoutSubjectHeading.js:9
+    ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+     7 |         .click(&#39;#contact-link&#39;)
+     8 |         .setValue(&#39;input[name=&#34;from&#34;]&#39;,&#34;bassel28@gmail.com&#34;)
+     9 |         .setValue(&#39;input[name=&#34;id_order&#34;]&#39;,&#34;2110&#34;) 
+     10 |         .setValue(&#39;textarea[name=&#34;message&#34;]&#39;,&#34;order is too late!&#34;)
+     11 |         .setValue(&#39;input[type=file]&#39;, require(&#39;path&#39;).resolve(&#39;deliveryBad.txt&#39;))
+    ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+ NoSuchElementError
+   An element could not be located on the page using the given search parameters.
+
+    Try fixing by :
+    1. Please inspect the html before the step
+    2. Verify if an element with the mentioned selector is present in the DOM tree
+
+    Error location:
+    C:\Users\Essam\Downloads\TESTAUTOMATION\tests\FormTests\withoutSubjectHeading.js:10
+    ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+     8 |         .setValue(&#39;input[name=&#34;from&#34;]&#39;,&#34;bassel28@gmail.com&#34;)
+     9 |         .setValue(&#39;input[name=&#34;id_order&#34;]&#39;,&#34;2110&#34;)
+     10 |         .setValue(&#39;textarea[name=&#34;message&#34;]&#39;,&#34;order is too late!&#34;) 
+     11 |         .setValue(&#39;input[type=file]&#39;, require(&#39;path&#39;).resolve(&#39;deliveryBad.txt&#39;))
+     12 |         .click(&#39;button[name=&#34;submitMessage&#34;]&#39;)
+    ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+ NoSuchElementError
+   An element could not be located on the page using the given search parameters.
+
+    Try fixing by :
+    1. Please inspect the html before the step
+    2. Verify if an element with the mentioned selector is present in the DOM tree
+
+    Error location:
+    C:\Users\Essam\Downloads\TESTAUTOMATION\tests\FormTests\withoutSubjectHeading.js:11
+    ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+     9 |         .setValue(&#39;input[name=&#34;id_order&#34;]&#39;,&#34;2110&#34;)
+     10 |         .setValue(&#39;textarea[name=&#34;message&#34;]&#39;,&#34;order is too late!&#34;)
+     11 |         .setValue(&#39;input[type=file]&#39;, require(&#39;path&#39;).resolve(&#39;deliveryBad.txt&#39;)) 
+     12 |         .click(&#39;button[name=&#34;submitMessage&#34;]&#39;)
+     13 |         browser.assert.visible(&#39;div[class=&#34;alert alert-danger&#34;]&#39;, &#39;All inputs without Subject Heading&#39;);
+    ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+ NoSuchElementError
+   An element could not be located on the page using the given search parameters.
+
+    Try fixing by :
+    1. Please inspect the html before the step
+    2. Verify if an element with the mentioned selector is present in the DOM tree
+
+    Error location:
+    C:\Users\Essam\Downloads\TESTAUTOMATION\tests\FormTests\withoutSubjectHeading.js:12
+    ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+     10 |         .setValue(&#39;textarea[name=&#34;message&#34;]&#39;,&#34;order is too late!&#34;)
+     11 |         .setValue(&#39;input[type=file]&#39;, require(&#39;path&#39;).resolve(&#39;deliveryBad.txt&#39;))
+     12 |         .click(&#39;button[name=&#34;submitMessage&#34;]&#39;) 
+     13 |         browser.assert.visible(&#39;div[class=&#34;alert alert-danger&#34;]&#39;, &#39;All inputs without Subject Heading&#39;);
+     14 | 
+    ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+ NoSuchElementError
+   An element could not be located on the page using the given search parameters.
+
+    Try fixing by :
+    1. Please inspect the html before the step
+    2. Verify if an element with the mentioned selector is present in the DOM tree
+
+    Error location:
+    C:\Users\Essam\Downloads\TESTAUTOMATION\tests\FormTests\withoutEmail.js:7
+    –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+     5 |         browser 
+     6 |         .url(&#39;http://automationpractice.multiformis.com/index.php&#39;) 
+     7 |         .click(&#39;#contact-link&#39;) 
+     8 |         .click(&#39;#uniform-id_contact&#39;) 
+     9 |         .click(&#39;[value=&#34;2&#34;]&#39;)
+    –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+ NoSuchElementError
+   An element could not be located on the page using the given search parameters.
+
+    Try fixing by :
+    1. Please inspect the html before the step
+    2. Verify if an element with the mentioned selector is present in the DOM tree
+
+    Error location:
+    C:\Users\Essam\Downloads\TESTAUTOMATION\tests\FormTests\withoutEmail.js:8
+    –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+     6 |         .url(&#39;http://automationpractice.multiformis.com/index.php&#39;) 
+     7 |         .click(&#39;#contact-link&#39;)
+     8 |         .click(&#39;#uniform-id_contact&#39;)  
+     9 |         .click(&#39;[value=&#34;2&#34;]&#39;)
+     10 |         .setValue(&#39;input[name=&#34;id_order&#34;]&#39;,&#34;2110&#34;)
+    –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+ NoSuchElementError
+   An element could not be located on the page using the given search parameters.
+
+    Try fixing by :
+    1. Please inspect the html before the step
+    2. Verify if an element with the mentioned selector is present in the DOM tree
+
+    Error location:
+    C:\Users\Essam\Downloads\TESTAUTOMATION\tests\FormTests\withoutEmail.js:9
+    –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+     7 |         .click(&#39;#contact-link&#39;)
+     8 |         .click(&#39;#uniform-id_contact&#39;) 
+     9 |         .click(&#39;[value=&#34;2&#34;]&#39;) 
+     10 |         .setValue(&#39;input[name=&#34;id_order&#34;]&#39;,&#34;2110&#34;)
+     11 |         .setValue(&#39;textarea[name=&#34;message&#34;]&#39;,&#34;order is too late!&#34;)
+    –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+ NoSuchElementError
+   An element could not be located on the page using the given search parameters.
+
+    Try fixing by :
+    1. Please inspect the html before the step
+    2. Verify if an element with the mentioned selector is present in the DOM tree
+
+    Error location:
+    C:\Users\Essam\Downloads\TESTAUTOMATION\tests\FormTests\withoutEmail.js:10
+    –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+     8 |         .click(&#39;#uniform-id_contact&#39;) 
+     9 |         .click(&#39;[value=&#34;2&#34;]&#39;)
+     10 |         .setValue(&#39;input[name=&#34;id_order&#34;]&#39;,&#34;2110&#34;) 
+     11 |         .setValue(&#39;textarea[name=&#34;message&#34;]&#39;,&#34;order is too late!&#34;)
+     12 |         .setValue(&#39;input[type=file]&#39;, require(&#39;path&#39;).resolve(&#39;deliveryBad.txt&#39;))
+    –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+ NoSuchElementError
+   An element could not be located on the page using the given search parameters.
+
+    Try fixing by :
+    1. Please inspect the html before the step
+    2. Verify if an element with the mentioned selector is present in the DOM tree
+
+    Error location:
+    C:\Users\Essam\Downloads\TESTAUTOMATION\tests\FormTests\withoutEmail.js:11
+    –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+     9 |         .click(&#39;[value=&#34;2&#34;]&#39;)
+     10 |         .setValue(&#39;input[name=&#34;id_order&#34;]&#39;,&#34;2110&#34;)
+     11 |         .setValue(&#39;textarea[name=&#34;message&#34;]&#39;,&#34;order is too late!&#34;) 
+     12 |         .setValue(&#39;input[type=file]&#39;, require(&#39;path&#39;).resolve(&#39;deliveryBad.txt&#39;))
+     13 |         .click(&#39;button[name=&#34;submitMessage&#34;]&#39;)
+    –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+ NoSuchElementError
+   An element could not be located on the page using the given search parameters.
+
+    Try fixing by :
+    1. Please inspect the html before the step
+    2. Verify if an element with the mentioned selector is present in the DOM tree
+
+    Error location:
+    C:\Users\Essam\Downloads\TESTAUTOMATION\tests\FormTests\withoutEmail.js:12
+    –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+     10 |         .setValue(&#39;input[name=&#34;id_order&#34;]&#39;,&#34;2110&#34;)
+     11 |         .setValue(&#39;textarea[name=&#34;message&#34;]&#39;,&#34;order is too late!&#34;)
+     12 |         .setValue(&#39;input[type=file]&#39;, require(&#39;path&#39;).resolve(&#39;deliveryBad.txt&#39;)) 
+     13 |         .click(&#39;button[name=&#34;submitMessage&#34;]&#39;)
+     14 |         browser.assert.visible(&#39;div[class=&#34;alert alert-danger&#34;]&#39;, &#39;All inputs without Email&#39;);
+    –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+ NoSuchElementError
+   An element could not be located on the page using the given search parameters.
+
+    Try fixing by :
+    1. Please inspect the html before the step
+    2. Verify if an element with the mentioned selector is present in the DOM tree
+
+    Error location:
+    C:\Users\Essam\Downloads\TESTAUTOMATION\tests\FormTests\withoutEmail.js:13
+    –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+     11 |         .setValue(&#39;textarea[name=&#34;message&#34;]&#39;,&#34;order is too late!&#34;)
+     12 |         .setValue(&#39;input[type=file]&#39;, require(&#39;path&#39;).resolve(&#39;deliveryBad.txt&#39;))
+     13 |         .click(&#39;button[name=&#34;submitMessage&#34;]&#39;) 
+     14 |         browser.assert.visible(&#39;div[class=&#34;alert alert-danger&#34;]&#39;, &#39;All inputs without Email&#39;);
+     15 | 
+    –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+ NoSuchElementError
+   An element could not be located on the page using the given search parameters.
+
+    Try fixing by :
+    1. Please inspect the html before the step
+    2. Verify if an element with the mentioned selector is present in the DOM tree
+
+    Error location:
+    C:\Users\Essam\Downloads\TESTAUTOMATION\tests\FormTests\withoutOrderReference.js:7
+    ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+     5 |         browser 
+     6 |         .url(&#39;http://automationpractice.multiformis.com/index.php&#39;) 
+     7 |         .click(&#39;#contact-link&#39;) 
+     8 |         .click(&#39;#uniform-id_contact&#39;) 
+     9 |         .click(&#39;[value=&#34;2&#34;]&#39;)
+    ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+ NoSuchElementError
+   An element could not be located on the page using the given search parameters.
+
+    Try fixing by :
+    1. Please inspect the html before the step
+    2. Verify if an element with the mentioned selector is present in the DOM tree
+
+    Error location:
+    C:\Users\Essam\Downloads\TESTAUTOMATION\tests\FormTests\withoutOrderReference.js:8
+    ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+     6 |         .url(&#39;http://automationpractice.multiformis.com/index.php&#39;) 
+     7 |         .click(&#39;#contact-link&#39;)
+     8 |         .click(&#39;#uniform-id_contact&#39;)  
+     9 |         .click(&#39;[value=&#34;2&#34;]&#39;)
+     10 |         .setValue(&#39;input[name=&#34;from&#34;]&#39;,&#34;bassel28@gmail.com&#34;)
+    ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+ NoSuchElementError
+   An element could not be located on the page using the given search parameters.
+
+    Try fixing by :
+    1. Please inspect the html before the step
+    2. Verify if an element with the mentioned selector is present in the DOM tree
+
+    Error location:
+    C:\Users\Essam\Downloads\TESTAUTOMATION\tests\FormTests\withoutOrderReference.js:9
+    ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+     7 |         .click(&#39;#contact-link&#39;)
+     8 |         .click(&#39;#uniform-id_contact&#39;) 
+     9 |         .click(&#39;[value=&#34;2&#34;]&#39;) 
+     10 |         .setValue(&#39;input[name=&#34;from&#34;]&#39;,&#34;bassel28@gmail.com&#34;)
+     11 |         .setValue(&#39;textarea[name=&#34;message&#34;]&#39;,&#34;order is too late!&#34;)
+    ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+ NoSuchElementError
+   An element could not be located on the page using the given search parameters.
+
+    Try fixing by :
+    1. Please inspect the html before the step
+    2. Verify if an element with the mentioned selector is present in the DOM tree
+
+    Error location:
+    C:\Users\Essam\Downloads\TESTAUTOMATION\tests\FormTests\withoutOrderReference.js:10
+    ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+     8 |         .click(&#39;#uniform-id_contact&#39;) 
+     9 |         .click(&#39;[value=&#34;2&#34;]&#39;)
+     10 |         .setValue(&#39;input[name=&#34;from&#34;]&#39;,&#34;bassel28@gmail.com&#34;) 
+     11 |         .setValue(&#39;textarea[name=&#34;message&#34;]&#39;,&#34;order is too late!&#34;)
+     12 |         .setValue(&#39;input[type=file]&#39;, require(&#39;path&#39;).resolve(&#39;deliveryBad.txt&#39;))
+    ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+ NoSuchElementError
+   An element could not be located on the page using the given search parameters.
+
+    Try fixing by :
+    1. Please inspect the html before the step
+    2. Verify if an element with the mentioned selector is present in the DOM tree
+
+    Error location:
+    C:\Users\Essam\Downloads\TESTAUTOMATION\tests\FormTests\withoutOrderReference.js:11
+    ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+     9 |         .click(&#39;[value=&#34;2&#34;]&#39;)
+     10 |         .setValue(&#39;input[name=&#34;from&#34;]&#39;,&#34;bassel28@gmail.com&#34;)
+     11 |         .setValue(&#39;textarea[name=&#34;message&#34;]&#39;,&#34;order is too late!&#34;) 
+     12 |         .setValue(&#39;input[type=file]&#39;, require(&#39;path&#39;).resolve(&#39;deliveryBad.txt&#39;))
+     13 |         .click(&#39;button[name=&#34;submitMessage&#34;]&#39;)
+    ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+ NoSuchElementError
+   An element could not be located on the page using the given search parameters.
+
+    Try fixing by :
+    1. Please inspect the html before the step
+    2. Verify if an element with the mentioned selector is present in the DOM tree
+
+    Error location:
+    C:\Users\Essam\Downloads\TESTAUTOMATION\tests\FormTests\withoutOrderReference.js:12
+    ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+     10 |         .setValue(&#39;input[name=&#34;from&#34;]&#39;,&#34;bassel28@gmail.com&#34;)
+     11 |         .setValue(&#39;textarea[name=&#34;message&#34;]&#39;,&#34;order is too late!&#34;)
+     12 |         .setValue(&#39;input[type=file]&#39;, require(&#39;path&#39;).resolve(&#39;deliveryBad.txt&#39;)) 
+     13 |         .click(&#39;button[name=&#34;submitMessage&#34;]&#39;)
+     14 |         browser.assert.visible(&#39;div[class=&#34;alert alert-danger&#34;]&#39;, &#39;All inputs without Order Reference&#39;);
+    ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+ NoSuchElementError
+   An element could not be located on the page using the given search parameters.
+
+    Try fixing by :
+    1. Please inspect the html before the step
+    2. Verify if an element with the mentioned selector is present in the DOM tree
+
+    Error location:
+    C:\Users\Essam\Downloads\TESTAUTOMATION\tests\FormTests\withoutOrderReference.js:13
+    ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+     11 |         .setValue(&#39;textarea[name=&#34;message&#34;]&#39;,&#34;order is too late!&#34;)
+     12 |         .setValue(&#39;input[type=file]&#39;, require(&#39;path&#39;).resolve(&#39;deliveryBad.txt&#39;))
+     13 |         .click(&#39;button[name=&#34;submitMessage&#34;]&#39;) 
+     14 |         browser.assert.visible(&#39;div[class=&#34;alert alert-danger&#34;]&#39;, &#39;All inputs without Order Reference&#39;);
+     15 | 
+    ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+ NoSuchWindowError
+   no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=122.0.6261.129)
+ NoSuchElementError
+   An element could not be located on the page using the given search parameters.
+
+    Try fixing by :
+    1. Please inspect the html before the step
+    2. Verify if an element with the mentioned selector is present in the DOM tree
+
+    Error location:
+    C:\Users\Essam\Downloads\TESTAUTOMATION\tests\FormTests\withoutFile.js:7
+    ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+     5 |         browser 
+     6 |         .url(&#39;http://automationpractice.multiformis.com/index.php&#39;) 
+     7 |         .click(&#39;#contact-link&#39;) 
+     8 |         .click(&#39;#uniform-id_contact&#39;) 
+     9 |         .click(&#39;[value=&#34;2&#34;]&#39;)
+    ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+ NoSuchElementError
+   An element could not be located on the page using the given search parameters.
+
+    Try fixing by :
+    1. Please inspect the html before the step
+    2. Verify if an element with the mentioned selector is present in the DOM tree
+
+    Error location:
+    C:\Users\Essam\Downloads\TESTAUTOMATION\tests\FormTests\withoutFile.js:8
+    ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+     6 |         .url(&#39;http://automationpractice.multiformis.com/index.php&#39;) 
+     7 |         .click(&#39;#contact-link&#39;)
+     8 |         .click(&#39;#uniform-id_contact&#39;)  
+     9 |         .click(&#39;[value=&#34;2&#34;]&#39;)
+     10 |         .setValue(&#39;input[name=&#34;from&#34;]&#39;,&#34;bassel28@gmail.com&#34;)
+    ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+ NoSuchElementError
+   An element could not be located on the page using the given search parameters.
+
+    Try fixing by :
+    1. Please inspect the html before the step
+    2. Verify if an element with the mentioned selector is present in the DOM tree
+
+    Error location:
+    C:\Users\Essam\Downloads\TESTAUTOMATION\tests\FormTests\withoutFile.js:9
+    ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+     7 |         .click(&#39;#contact-link&#39;)
+     8 |         .click(&#39;#uniform-id_contact&#39;) 
+     9 |         .click(&#39;[value=&#34;2&#34;]&#39;) 
+     10 |         .setValue(&#39;input[name=&#34;from&#34;]&#39;,&#34;bassel28@gmail.com&#34;)
+     11 |         .setValue(&#39;input[name=&#34;id_order&#34;]&#39;,&#34;2110&#34;)
+    ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+ NoSuchElementError
+   An element could not be located on the page using the given search parameters.
+
+    Try fixing by :
+    1. Please inspect the html before the step
+    2. Verify if an element with the mentioned selector is present in the DOM tree
+
+    Error location:
+    C:\Users\Essam\Downloads\TESTAUTOMATION\tests\FormTests\withoutFile.js:10
+    ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+     8 |         .click(&#39;#uniform-id_contact&#39;) 
+     9 |         .click(&#39;[value=&#34;2&#34;]&#39;)
+     10 |         .setValue(&#39;input[name=&#34;from&#34;]&#39;,&#34;bassel28@gmail.com&#34;) 
+     11 |         .setValue(&#39;input[name=&#34;id_order&#34;]&#39;,&#34;2110&#34;)
+     12 |         .setValue(&#39;textarea[name=&#34;message&#34;]&#39;,&#34;order is too late!&#34;)
+    ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+ NoSuchElementError
+   An element could not be located on the page using the given search parameters.
+
+    Try fixing by :
+    1. Please inspect the html before the step
+    2. Verify if an element with the mentioned selector is present in the DOM tree
+
+    Error location:
+    C:\Users\Essam\Downloads\TESTAUTOMATION\tests\FormTests\withoutFile.js:11
+    ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+     9 |         .click(&#39;[value=&#34;2&#34;]&#39;)
+     10 |         .setValue(&#39;input[name=&#34;from&#34;]&#39;,&#34;bassel28@gmail.com&#34;)
+     11 |         .setValue(&#39;input[name=&#34;id_order&#34;]&#39;,&#34;2110&#34;) 
+     12 |         .setValue(&#39;textarea[name=&#34;message&#34;]&#39;,&#34;order is too late!&#34;)
+     13 |         .click(&#39;button[name=&#34;submitMessage&#34;]&#39;)
+    ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+ NoSuchElementError
+   An element could not be located on the page using the given search parameters.
+
+    Try fixing by :
+    1. Please inspect the html before the step
+    2. Verify if an element with the mentioned selector is present in the DOM tree
+
+    Error location:
+    C:\Users\Essam\Downloads\TESTAUTOMATION\tests\FormTests\withoutFile.js:12
+    ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+     10 |         .setValue(&#39;input[name=&#34;from&#34;]&#39;,&#34;bassel28@gmail.com&#34;)
+     11 |         .setValue(&#39;input[name=&#34;id_order&#34;]&#39;,&#34;2110&#34;)
+     12 |         .setValue(&#39;textarea[name=&#34;message&#34;]&#39;,&#34;order is too late!&#34;) 
+     13 |         .click(&#39;button[name=&#34;submitMessage&#34;]&#39;)
+     14 |         browser.assert.visible(&#39;div[class=&#34;alert alert-danger&#34;]&#39;, &#39;All inputs without File added&#39;);
+    ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+ NoSuchElementError
+   An element could not be located on the page using the given search parameters.
+
+    Try fixing by :
+    1. Please inspect the html before the step
+    2. Verify if an element with the mentioned selector is present in the DOM tree
+
+    Error location:
+    C:\Users\Essam\Downloads\TESTAUTOMATION\tests\FormTests\withoutFile.js:13
+    ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+     11 |         .setValue(&#39;input[name=&#34;id_order&#34;]&#39;,&#34;2110&#34;)
+     12 |         .setValue(&#39;textarea[name=&#34;message&#34;]&#39;,&#34;order is too late!&#34;)
+     13 |         .click(&#39;button[name=&#34;submitMessage&#34;]&#39;) 
+     14 |         browser.assert.visible(&#39;div[class=&#34;alert alert-danger&#34;]&#39;, &#39;All inputs without File added&#39;);
+     15 | 
+    ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+ NoSuchWindowError
+   no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=122.0.6261.129)
+    </system-err>
+  
+
+    
+
+  
+  </testsuite>
+</testsuites>

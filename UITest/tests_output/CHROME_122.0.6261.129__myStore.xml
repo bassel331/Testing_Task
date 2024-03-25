@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="1"
+            tests="2">
+
+  <testsuite name="myStore"
+    errors="0" failures="1" hostname="" id="" package="myStore" skipped="1"
+    tests="2" time="31.56" timestamp="">
+  
+    <testcase name="Test Suite Name" classname="myStore" time="8.166" assertions="1">
+
+    
+    </testcase>
+  
+    <testcase name="Another Test in the Same Suite" classname="myStore" time="7.614" assertions="1">  <failure message="All inputs without Message in 5000ms - expected &#34;is visible&#34; but got: &#34;element could not be located&#34; (5183ms)">    at Another Test in the Same Suite (C:\Users\Essam\Downloads\TESTAUTOMATION\tests\myStore.js:27:24)</failure>
+
+    
+    </testcase>
+  
+
+  
+
+    
+
+  
+    
+    <testcase
+      name="Another Another Test in the Same Suite" classname="myStore">
+      <skipped />
+    </testcase>
+    
+  
+  </testsuite>
+</testsuites>
