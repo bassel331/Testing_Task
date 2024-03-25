@@ -17,7 +17,7 @@ jobs:
       - run:
           name: Run tests
           working_directory: UITest
-          command: npm run node nightwatch -e chrome -a myStore
+          command: node nightwatch -e chrome -a myStore
       - store_artifacts:
           path: UITest\tests_output\nightwatch-html-report\index.html
           destination: html_reports
@@ -28,7 +28,7 @@ jobs:
       - checkout
       - run:
           name: Install Dependencies
-          working_directory: APITEst
+          working_directory: APITest
           command: npm install
       - run:
           name: Run tests
