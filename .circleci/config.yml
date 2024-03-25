@@ -27,10 +27,7 @@ jobs:
           name: Install Dependencies
           working_directory: APITest
           command: npm install
-     - run:
-          name: Install nodemon
-          working_directory: APITest
-          command: npm install nodemon  
+      
       - run:
           name: Run tests
           working_directory: APITest
