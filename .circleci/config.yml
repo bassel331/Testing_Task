@@ -1,4 +1,6 @@
 version: "2.1"
+orbs:
+  browser-tools: circleci/browser-tools@1.4.6
 
 jobs:
   UITest:
@@ -17,7 +19,7 @@ jobs:
           working_directory: UITest
           command: node nightwatch -e chrome -a myStore
       - store_artifacts:
-          path: UITest\tests_output\nightwatch-html-report\index.html
+          path: UITest/tests_output/nightwatch-html-report/index.html
           destination: html_reports
   APITest:
     docker:
@@ -37,7 +39,7 @@ jobs:
           working_directory: APITest
           command: mocha server.test.js   
       - store_artifacts:
-          path: APITest\mochawesome-report\mochawesome.html
+          path: APITest/mochawesome-report/mochawesome.html
           destination: html_reports
 
 workflows:
