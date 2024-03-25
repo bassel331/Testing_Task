@@ -1,15 +1,49 @@
-version: 2.1
+version: "2.1"
+orbs:
+  browser-tools: circleci/browser-tools@1.4.6
+
 jobs:
-  build:
+  UITest:
     docker:
-      - image: circleci/node:latest
+      - image: cimg/node:21.6.1-browsers
     steps:
       - checkout
-      - run: npm install
-      - run: npm test
+      - browser-tools/install-browser-tools:
+          chrome-version: "118.0.5993.88"
+      - run:
+          name: Install Dependencies
+          working_directory: UITest
+          command: npm install
+      - run:
+          name: Run tests
+          working_directory: UITest
+          command: npm run node nightwatch -e chrome -a myStore
+      - store_artifacts:
+          path: UITest\tests_output\nightwatch-html-report\index.html
+          destination: html_reports
+  APITest:
+    docker:
+      - image: cimg/node:21.6.1
+    steps:
+      - checkout
+      - run:
+          name: Install Dependencies
+          working_directory: APITEst
+          command: npm install
+      - run:
+          name: Run tests
+          working_directory: APITest
+          command: npm run dev
+      - run:
+          name: Run tests
+          working_directory: APITest
+          command: mocha server.test.js   
+      - store_artifacts:
+          path: APITest\mochawesome-report\mochawesome.html
+          destination: html_reports
 
 workflows:
-  version: 2
-  build_and_test:
+  test:
     jobs:
-      - build
+      - UI
+      - API
