@@ -28,39 +28,56 @@ module.exports = {
 
   // See https://nightwatchjs.org/guide/extending-nightwatch/adding-plugins.html
   plugins: [],
-  
-  // See https://nightwatchjs.org/guide/concepts/test-globals.html#external-test-globals
-  globals_path : '',
+
+  // See https://nightwatchjs.org/guide/concepts/test-globals.html
+  globals_path: "",
 
   webdriver: {},
-  
+
   test_workers: {
     enabled: true,
-    workers: 'auto'
   },
- 
+
+  skip_testcases_on_fail: false,
+
   test_settings: {
     default: {
-      skip_testcases_on_fail: false,
       disable_error_log: false,
-      launch_url: 'https://nightwatchjs.org',
+      launch_url: "http://automationpractice.multiformis.com",
 
       screenshots: {
         enabled: false,
-        path: 'screens',
-        on_failure: true
+        path: "screens",
+        on_failure: true,
       },
 
       desiredCapabilities: {
-        browserName : 'chrome'
+        browserName: "chrome",
       },
 
       webdriver: {
         start_process: true,
-        server_path: ''
+        server_path: "",
       },
-      
     },
+
+    chrome: {
+      desiredCapabilities: {
+        browserName: "chrome",
+        "goog:chromeOptions": {
+          // More info on Chromedriver: https://sites.google.com/a/chromium.org/chromedriver/
+          //
+          // w3c:false tells Chromedriver to run using the legacy JSONWire protocol (not required in Chrome 78)
+          w3c: true,
+          args: [
+            //'--no-sandbox',
+            //'--ignore-certificate-errors',
+            //'--allow-insecure-localhost',
+            //'--headless'
+          ],
+        },
+      },
+
 
     
 
@@ -85,22 +102,7 @@ module.exports = {
       }
     },
 
-    chrome: {
-      desiredCapabilities : {
-        browserName : 'chrome',
-        'goog:chromeOptions' : {
-          // More info on Chromedriver: https://sites.google.com/a/chromium.org/chromedriver/
-          //
-          // w3c:false tells Chromedriver to run using the legacy JSONWire protocol (not required in Chrome 78)
-          w3c: true,
-          args: [
-            //'--no-sandbox',
-            //'--ignore-certificate-errors',
-            //'--allow-insecure-localhost',
-            //'--headless'
-          ]
-        }
-      },
+ 
 
       webdriver: {
         start_process: true,
