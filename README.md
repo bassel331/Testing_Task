@@ -1,6 +1,7 @@
 # QA Task (SDET 2024 - Technical Task)
 
 [![CircleCI](https://dl.circleci.com/status-badge/img/gh/Siemens_Task/Siemens_testing/tree/main.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/Siemens_Task/Siemens_testing/tree/main)
+  
 
 This repository contains two main parts: API testing and UI testing. The API testing is conducted using mock-user-auth npm , supertest npm , mocha and chai for assertions , while the UI testing is performed using Nightwatch.js.
 
